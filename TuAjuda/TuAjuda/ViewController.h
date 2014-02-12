@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+
+@property NSMutableArray *listaInstituicao;
+@property (weak, nonatomic) IBOutlet UITextField *campoBusca;
+-(BOOL)textFieldShouldReturn:(UITextField *)textField;
 
 @end
